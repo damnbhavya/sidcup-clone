@@ -19,18 +19,18 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 5px;
+    width: 0.625rem;
+    height: 0.3125rem;
 }
 
 ::-webkit-scrollbar-track {
     background: #000000;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #91B508;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -38,19 +38,19 @@ body {
 }
 
 #nav {
-    height: 135px;
+    height: 8.4375rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 131px;
-    gap: 50px;
+    padding: 0 8.1875rem;
+    gap: 3.125rem;
     position: fixed;
     z-index: 99;
 }
 
 #nav img {
-    height: 74px;
+    height: 4.625rem;
     transition: all ease 0.3s;
 }
 
@@ -60,7 +60,7 @@ body {
 
 #nav ul {
     display: flex;
-    gap: 60px;
+    gap: 3.75rem;
     list-style-type: none;
     text-transform: uppercase;
     font-weight: 500;
@@ -76,8 +76,8 @@ body {
 
 #cursor {
     pointer-events: none;
-    height: 21px;
-    width: 21px;
+    height: 1.3125rem;
+    width: 1.3125rem;
     background-color: #91B508;
     border-radius: 50%;
     position: fixed;
@@ -86,12 +86,12 @@ body {
 }
 
 #cursor-blur {
-    height: 500px;
-    width: 500px;
+    height: 31.25rem;
+    width: 31.25rem;
     background: radial-gradient(circle, #e4ff785e 15%, #92b5083a 80%);
     border-radius: 50%;
     position: fixed;
-    filter: blur(80px);
+    filter: blur(5rem);
     z-index: 9;
 }
 
@@ -122,37 +122,37 @@ video {
 }
 
 #page1 h1 {
-    font-size: 145px;
+    font-size: 9.0625rem;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     position: relative;
 }
 
 #page1 h1::before {
     content: "EAT. DRINK. PLAY.";
     position: absolute;
-    top: -5px;
+    top: -0.3125rem;
     color: black;
-    left: -5px;
-    -webkit-text-stroke: 1.5px #91B508;
+    left: -0.3125rem;
+    -webkit-text-stroke: 0.09375rem #91B508;
     z-index: -1;
 }
 
 #page1 h2 {
-    font-size: 31px;
+    font-size: 1.9375rem;
     font-weight: 800;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 #page1 p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     width: 45%;
 }
 
 #arrow-container {
-    height: 200px;
-    width: 200px;
+    height: 12.5rem;
+    width: 12.5rem;
     position: absolute;
     left: -3%;
     bottom: 0%;
@@ -162,7 +162,7 @@ video {
     height: 100%;
     width: 100%;
     background-color: transparent;
-    border: 2px solid #91B508;
+    border: 0.125rem solid #91B508;
     position: absolute;
     display: flex;
     left: -3%;
@@ -174,7 +174,7 @@ video {
 }
 
 #arrow i {
-    font-size: 50px;
+    font-size: 3.125rem;
     transition: all ease 0.5s;
 }
 
@@ -188,7 +188,7 @@ video {
 }
 
 #page2 {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 5.625rem;
     min-height: 100vh;
     width: 100%;
     z-index: 10;
@@ -217,18 +217,18 @@ video {
 
 #scroller h4 {
     display: inline-block;
-    font-size: 120px;
+    font-size: 7.5rem;
     font-weight: 900;
-    margin-right: 20px;
+    margin-right: 1.25rem;
     color: black;
-    -webkit-text-stroke: 2px #ffffff;
+    -webkit-text-stroke: 0.125rem #ffffff;
     paint-order: stroke fill;
     transition: all linear 0.3s;
 }
 
 #scroller h4:hover {
     color: #91B508;
-    -webkit-text-stroke: 2px #91B508;
+    -webkit-text-stroke: 0.125rem #91B508;
 }
 
 @keyframes scroll {
@@ -247,16 +247,16 @@ video {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 50px;
-    margin-top: 100px;
+    padding: 0 3.125rem;
+    margin-top: 6.25rem;
     position: relative;
     z-index: 10;
 }
 
 #about img {
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 1.25rem;
     object-fit: cover;
 }
 
@@ -266,16 +266,16 @@ video {
 }
 
 #aboutus h3 {
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: 900;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 #aboutus p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 2;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 #cards {
@@ -283,7 +283,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 3.75rem;
     position: relative;
     z-index: 10;
 }
@@ -292,8 +292,8 @@ video {
     position: absolute;
     top: 0;
     left: 6%;
-    width: 220px;
-    height: 150px;
+    width: 13.75rem;
+    height: 9.375rem;
     object-fit: fill;
     z-index: -1;
 }
@@ -302,7 +302,7 @@ video {
     height: 80%;
     width: 26%;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     transition: all linear 0.3s;
 }
 
@@ -322,7 +322,7 @@ video {
     align-items: start;
     justify-content: end;
     flex-direction: column;
-    padding: 0px 35px 15px;
+    padding: 0 2.1875rem 0.9375rem;
     position: absolute;
     z-index: 1;
     transition: all linear 0.3s;
@@ -330,20 +330,20 @@ video {
 
 .overlay h4 {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: 900;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 
 }
 
 .overlay p {
     display: none;
     color: #000;
-    font-size: 18px;
-    line-height: 35px;
+    font-size: 1.125rem;
+    line-height: 2.1875rem;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .card img {
@@ -384,9 +384,9 @@ video {
 
 #greenbox h4 {
     width: 40%;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-transform: uppercase;
-    line-height: 50px;
+    line-height: 3.125rem;
     font-weight: 800;
     text-align: center;
     color: #000;
@@ -398,7 +398,7 @@ video {
     height: 100%;
     object-fit: cover;
     width: 13%;
-    padding: 7px 15px;
+    padding: 0.4375rem 0.9375rem;
 }
 
 #page3 {
@@ -413,10 +413,10 @@ video {
 }
 
 #page3>h4 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 900;
     width: 60%;
-    line-height: 45px;
+    line-height: 2.8125rem;
     text-align: center;
     text-transform: uppercase;
     position: absolute;
@@ -425,12 +425,12 @@ video {
 #colon1 {
     left: 15%;
     top: 25%;
-    height: 55px;
+    height: 3.4375rem;
     position: absolute;
 }
 
 #colon2 {
-    height: 55px;
+    height: 3.4375rem;
     position: absolute;
     right: 15%;
     bottom: 25%;
@@ -442,7 +442,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 1.875rem;
     z-index: 10;
     position: relative;
 }
@@ -451,7 +451,7 @@ video {
     height: 70%;
     width: 26%;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     position: relative;
     z-index: 10;
 
@@ -465,7 +465,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 37px;
+    font-size: 2.3125rem;
     font-weight: 800;
     transition: all linear 0.3s;
     text-transform: uppercase;
@@ -501,12 +501,12 @@ video {
 }
 
 #page4 h1 {
-    font-size: 80px;
+    font-size: 5rem;
     position: absolute;
     top: -12%;
     font-weight: 900;
     color: black;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    text-shadow: -0.0625rem -0.0625rem 0 #fff, 0.0625rem -0.0625rem 0 #fff, -0.0625rem 0.0625rem 0 #fff, 0.0625rem 0.0625rem 0 #fff;
 }
 
 #footer {
@@ -525,7 +525,7 @@ video {
 }
 
 #sec {
-    padding-top: 110px;
+    padding-top: 6.875rem;
     height: 60%;
     width: 100%;
     display: flex;
@@ -544,7 +544,7 @@ video {
     left: 10%;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 50px;
+    gap: 3.125rem;
 }
 
 #section1 {
@@ -552,15 +552,15 @@ video {
 }
 
 #section4 {
-    gap: 0px;
+    gap: 0;
 }
 
 #section1>img {
-    height: 100px;
+    height: 6.25rem;
 }
 
 #socials i {
-    font-size: 35px;
+    font-size: 2.1875rem;
     color: #000000;
     transition: all ease 0.3s;
 }
@@ -573,12 +573,12 @@ video {
     list-style-type: none;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 #section2 li {
     color: #000;
-    line-height: 50px;
+    line-height: 3.125rem;
     transition: all ease 0.3s;
 }
 
@@ -590,12 +590,12 @@ video {
     list-style-type: none;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 #section3 li {
     color: #000;
-    line-height: 50px;
+    line-height: 3.125rem;
     transition: all ease 0.3s;
 }
 
@@ -605,8 +605,8 @@ video {
 
 #section4 p {
     color: #000;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
     font-weight: 600;
     text-transform: uppercase;
     transition: all ease 0.3s;
@@ -614,8 +614,8 @@ video {
 
 #section4 h4 {
     color: #000;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -642,12 +642,12 @@ video {
 
 #lastline li {
     color: #000;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
     transition: all ease 0.3s;
-    padding: 0 10px;
+    padding: 0 0.625rem;
 }
 
 #lastline li+li {
-    border-left: 1px solid #000000;
+    border-left: 0.0625rem solid #000000;
 }
