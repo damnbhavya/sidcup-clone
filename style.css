@@ -632,6 +632,7 @@ video {
     justify-content: center;
     bottom: 7%;
     position: absolute;
+    z-index: -1;
 }
 
 #lastline ul {
