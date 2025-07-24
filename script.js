@@ -26,11 +26,12 @@ function animate() {
 }
 animate();
 
-var liall = document.querySelectorAll("#nav li")
+var liall = document.querySelectorAll("#nav img, #nav li, #page1 #arrow, .overlay, .dash, #section1>img, #socials i, #section2 li, #section3 li, #section4 h4, #lastline li")
+console.log(liall);
 liall.forEach(function (elem) {
     elem.addEventListener("mouseenter", function () {
         crsr.style.scale = 3;
-        crsr.style.border = "1px solid #fff";
+        crsr.style.border = "1px solid rgba(255, 255, 255, 0.6)";
         crsr.style.backgroundColor = "transparent";
     })
     elem.addEventListener("mouseleave", function () {
@@ -39,6 +40,13 @@ liall.forEach(function (elem) {
         crsr.style.backgroundColor = "#91B508";
     })
 })
+var scrollButton = document.getElementById("arrow");
+var pagetwo = document.getElementById("page2");
+scrollButton.addEventListener("click", function () {
+    pagetwo.scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
 gsap.to("#nav", {
     backgroundColor: "#000",
@@ -78,15 +86,15 @@ gsap.from("#about img, #aboutus", {
     }
 })
 
-gsap.from(".card", {
+gsap.from(".card, #cards>img", {
     scale: 0.8,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
         trigger: ".card",
         scroller: "body",
-        start: "top 70%",
-        end: "top 65%",
+        start: "top 80%",
+        end: "top 75%",
         scrub: 1
     }
 })

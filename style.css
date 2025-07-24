@@ -18,6 +18,25 @@ body {
     width: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #91B508;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #91B508;
+}
+
 #nav {
     height: 135px;
     width: 100%;
@@ -32,6 +51,11 @@ body {
 
 #nav img {
     height: 74px;
+    transition: all ease 0.3s;
+}
+
+#nav img:hover {
+    transform: scale(0.95);
 }
 
 #nav ul {
@@ -42,6 +66,14 @@ body {
     font-weight: 500;
 }
 
+#nav li {
+    transition: all ease 0.3s;
+}
+
+#nav li:hover {
+    color: #91B508;
+}
+
 #cursor {
     pointer-events: none;
     height: 21px;
@@ -50,7 +82,7 @@ body {
     border-radius: 50%;
     position: fixed;
     z-index: 100;
-    transition: all linear 0.1s;
+    transition: all 0.1s ease;
 }
 
 #cursor-blur {
@@ -118,7 +150,45 @@ video {
     width: 45%;
 }
 
+#arrow-container {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: -3%;
+    bottom: 0%;
+}
+
+#arrow {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #91B508;
+    position: absolute;
+    display: flex;
+    left: -3%;
+    bottom: 0%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+
+#arrow i {
+    font-size: 50px;
+    transition: all ease 0.5s;
+}
+
+#arrow-container:hover #arrow {
+    scale: 0.4;
+    background-color: #91B508;
+}
+
+#arrow-container:hover #arrow i {
+    scale: 2;
+}
+
 #page2 {
+    scroll-margin-top: 90px;
     min-height: 100vh;
     width: 100%;
     z-index: 10;
@@ -146,7 +216,6 @@ video {
 }
 
 #scroller h4 {
-    /* pointer-events: all; */
     display: inline-block;
     font-size: 120px;
     font-weight: 900;
@@ -173,7 +242,7 @@ video {
 }
 
 #about {
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -217,6 +286,16 @@ video {
     gap: 60px;
     position: relative;
     z-index: 10;
+}
+
+#cards>img {
+    position: absolute;
+    top: 0;
+    left: 6%;
+    width: 220px;
+    height: 150px;
+    object-fit: fill;
+    z-index: -1;
 }
 
 .card {
@@ -298,7 +377,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right top, #91B508, #069C3C);
+    background: linear-gradient(to right top, #91B508 45%, #069C3C);
     position: relative;
     z-index: 10;
 }
@@ -431,7 +510,143 @@ video {
 }
 
 #footer {
-    height: 40vh;
+    height: 50vh;
     width: 100%;
-    background: linear-gradient(to right top, #91B508, #069C3C);
+    background: linear-gradient(to right top, #91B508 45%, #069C3C);
+    position: relative;
+    z-index: 10;
+}
+
+#footer>img {
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+}
+
+#sec {
+    padding-top: 110px;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#section1,
+#section2,
+#section3,
+#section4 {
+    height: 100%;
+    width: 23%;
+    display: flex;
+    align-items: start;
+    left: 10%;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#section1 {
+    width: 15%;
+}
+
+#section4 {
+    gap: 0px;
+}
+
+#section1>img {
+    height: 100px;
+}
+
+#socials i {
+    font-size: 35px;
+    color: #000000;
+    transition: all ease 0.3s;
+}
+
+#socials i:hover {
+    color: #ffffff;
+}
+
+#section2 ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+#section2 li {
+    color: #000;
+    line-height: 50px;
+    transition: all ease 0.3s;
+}
+
+#section2 li:hover {
+    color: #ffffff;
+}
+
+#section3 ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+#section3 li {
+    color: #000;
+    line-height: 50px;
+    transition: all ease 0.3s;
+}
+
+#section3 li:hover {
+    color: #ffffff;
+}
+
+#section4 p {
+    color: #000;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all ease 0.3s;
+}
+
+#section4 h4 {
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#section4 h4:hover {
+    color: #ffffff;
+}
+
+#lastline {
+    height: 20vh;
+    width: 85%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    bottom: 7%;
+    position: absolute;
+}
+
+#lastline ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#lastline li {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all ease 0.3s;
+    padding: 0 10px;
+}
+
+#lastline li+li {
+    border-left: 1px solid #000000;
 }
