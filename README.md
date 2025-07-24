@@ -1,2 +1,2 @@
-# sidcup-clone
+# SidCup Family Golf Website Clone
 
